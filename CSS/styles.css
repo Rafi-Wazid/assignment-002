@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+#fonts {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#shape {
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    background-color: black;
+}
+
+.font-color {
+    color: white;
+}
+
+
+/* shared styles  */
+
+
+.display-flex {
+    display: flex;
+}
+
+
+.btn-primary {
+    background-color: #E6533C;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 16px 46px;
+    border: none;
+    border-radius: 42px;
+}
+
+.btn-secondary{
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 16px 46px;
+    border: 1px solid white;
+    border-radius: 42px;
+}
+
+.buttons {
+    gap: 5px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.description-text {
+    color: white;
+    font-size: 1.2rem;
+    opacity: 50%;
+}
+
+.tittle-primary {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+
+
+/* navbar styles */
+
+header {
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.logo {
+    color: #E6533C;
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+.nav-options {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-options a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+}
+
+
+.btn-home {
+    background-color: #E6533C;
+    border: none;
+    border-radius: 50px;
+}
+
+
+.menu-icon {
+    display: none;
+}
+
+
+/* banner styles  */
+
+.banner {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content {
+    max-width : 600px;
+    align-items: center;
+}
+
+
+.banner-tittle {
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+#shape {
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+/* Banner image styles */
+
+.banner-image {
+    margin-right: 200px;
+}
+
+
+.banner-image img {
+    max-width : 100%;
+    align-items: start;
+}
+
+
+.content-videos {
+    width: 193px;
+    height: 98px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.content-videos h2 {
+    margin-bottom: 0;
+}
+
+.content-videos p {
+    font-size: 13px;
+}
+
+
+.tutorial {
+    margin-top: -200px;
+    
+}
+
+.workout-videos {
+    margin-top: -400px;
+}
+
+
+
+
+/* habits section styles */
+
+.habit-section {
+    max-width: 75%;
+    margin: 0  auto;
+}
+
+.habits-intro {
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.habits-intro p {
+    margin-bottom: 60px;
+}
+
+.habits-tittle {
+    font-size: 1.3rem;
+    margin: 2px 0 0 0;
+}
+
+.habits-type {
+    width: 100%;
+    gap: 40px ;
+    justify-content: space-between;
+}
+
+
+.habits {
+    width: 230px;
+    text-align: center;
+}
+
+.habits img {
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+
+
+/* responsive media query */
+
+
+@media screen and (max-width: 576px) {
+
+        header {
+            max-width: 100%;
+        }
+
+        .nav-options {
+            display: none;
+        }
+
+        .banner {
+            flex-direction: column;
+        }
+
+        .banner-image {
+            margin-right: -50px;
+            margin-top: 50px;
+        }
+
+        .habits-type {
+            flex-direction: column;
+            margin-left: 50px;
+        }
+
+}
