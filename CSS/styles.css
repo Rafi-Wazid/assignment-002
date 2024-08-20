@@ -228,6 +228,7 @@ nav {
     width: 100%;
     gap: 40px ;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 
@@ -241,6 +242,48 @@ nav {
     margin-bottom: 30px;
 }
 
+ /* Extra mile section */
+
+
+.extra-mile {
+    width: 75%;
+    margin: 0 auto;
+    padding: 40px 50px;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 8px;
+    justify-content: space-evenly;
+    gap: 150px;
+}
+
+.join-section {
+    width: 443px;
+}
+
+
+.extra-mile-pic {
+    width: 443px;
+}
+
+ .extra-mile-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive media query */
@@ -248,7 +291,8 @@ nav {
 
 @media screen and (max-width: 576px) {
 
-        header {
+        header , 
+        .join-section {
             max-width: 100%;
         }
 
@@ -256,7 +300,9 @@ nav {
             display: none;
         }
 
-        .banner {
+        .banner , 
+        .extra-mile ,
+        .extra-mile img {
             flex-direction: column;
         }
 
@@ -267,7 +313,18 @@ nav {
 
         .habits-type {
             flex-direction: column;
-            margin-left: 50px;
+            margin-left: 30px;
         }
+
+        .extra-mile img {
+            margin-top: -100px;
+            width: 280px;
+            height: 170px;
+        }
+
+        .extra-mile {
+            margin-left: 40px;
+        }
+
 
 }
