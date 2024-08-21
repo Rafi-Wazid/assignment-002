@@ -273,6 +273,47 @@ nav {
 
 
 
+ /* calculator styles  */
+
+
+.calculator-section {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.calculator-box {
+    background-color: rgba(34, 34, 34, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.calculator-chart , .calculator-form {
+    width: 50%;
+}
+
+
+.calculator-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+ table , td , th {
+    text-align: left;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 10px 15px;
+    font-size: 1rem;
+ }
+
+
+
 
 
 
@@ -294,6 +335,8 @@ nav {
         header , 
         .join-section {
             max-width: 100%;
+            justify-content: center;
+            align-items: center;
         }
 
         .nav-options {
