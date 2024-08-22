@@ -283,23 +283,33 @@ nav {
 }
 
 
+.calculator-intro p {
+    margin-bottom: 50px;
+}
+
+
 
 .calculator-box {
     background-color: rgba(34, 34, 34, 1);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 
 
-.calculator-chart , .calculator-form {
-    width: 50%;
+.calculator-chart {
+    width: 40%;
+}
+
+.calculator-form  {
+    max-width: 35%;
+
 }
 
 
 .calculator-form form {
-    display: flex;
+    margin: 0 auto;
     flex-direction: column;
 }
 
@@ -311,6 +321,20 @@ nav {
     padding: 10px 15px;
     font-size: 1rem;
  }
+
+ table {
+    margin: 0 auto;
+ }
+
+ .calculator-form input, .calculator-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #292929;
+    color: #fff;
+}
+
 
 
 
