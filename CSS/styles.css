@@ -336,6 +336,60 @@ nav {
 }
 
 
+/* Team members sections */
+
+
+.team-section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.team-container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-description {
+    margin-bottom: 60px;
+}
+
+
+
+.team-members-info {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(3 , 3fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+
+.team-members img {
+    width: 100%;
+    height: 272px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+.team-members {
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+
+
+
+
+
+
 
 
 
@@ -369,8 +423,17 @@ nav {
 
         .banner , 
         .extra-mile ,
-        .extra-mile img {
+        .extra-mile img ,
+        .calculator-box {
             flex-direction: column;
+        }
+
+        .calculator-chart {
+            width: 80%;
+        }
+
+        .calculator-form {
+            max-width: 80%;
         }
 
         .banner-image {
@@ -390,8 +453,16 @@ nav {
         }
 
         .extra-mile {
-            margin-left: 40px;
+            max-width: 100%;
         }
 
+        .team-members-info {
+            width: 100%;
+            grid-template-columns: repeat(1 , 1fr);
+        }
+
+        .team-container {
+            width: 100%;
+        }
 
 }
