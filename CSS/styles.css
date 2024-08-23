@@ -66,7 +66,7 @@ body {
 
 .description-text {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     opacity: 50%;
 }
 
@@ -81,7 +81,7 @@ body {
 /* navbar styles */
 
 header {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     background-color: black;
 }
@@ -101,6 +101,21 @@ nav {
     font-weight: 800;
     font-style: italic;
 }
+
+.menu-icon {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
 
 
 .nav-options {
@@ -336,6 +351,11 @@ nav {
 }
 
 
+.calculator-form button {
+    margin-bottom: 30px;
+}
+
+
 /* Team members sections */
 
 
@@ -413,7 +433,7 @@ nav {
 
 
 .food-grid {
-    max-width: 690px;
+    max-width: 55%;
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
     gap: 20px;
@@ -433,6 +453,54 @@ nav {
 
 
 
+/* footer styles  */
+
+.footer-container {
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 50px;
+    border-top: 1px solid #333;
+    padding-bottom: 50px;
+}
+
 
 
 
@@ -446,7 +514,7 @@ nav {
 
 @media screen and (max-width: 576px) {
 
-        header , 
+        header ,
         .join-section {
             max-width: 100%;
             justify-content: center;
@@ -457,10 +525,15 @@ nav {
             display: none;
         }
 
+        .menu-icon {
+            display: flex;
+        }
+
         .banner , 
         .extra-mile ,
         .extra-mile img ,
-        .calculator-box {
+        .calculator-box , 
+        .footer-container {
             flex-direction: column;
         }
 
@@ -498,9 +571,12 @@ nav {
             grid-template-columns: repeat(1 , 1fr);
         }
 
-
         .team-container {
             width: 100%;
+        }
+
+        .footer-links h3, .footer-links ul li {
+            text-align: left;
         }
 
 }
